@@ -1085,7 +1085,7 @@ L Device:R_Small R2
 U 1 1 691CD8B3
 P 9450 5300
 F 0 "R2" H 9509 5346 50  0000 L CNN
-F 1 "R_Small" H 9509 5255 50  0000 L CNN
+F 1 "10k" H 9509 5255 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 9450 5300 50  0001 C CNN
 F 3 "~" H 9450 5300 50  0001 C CNN
 	1    9450 5300
@@ -1093,8 +1093,6 @@ F 3 "~" H 9450 5300 50  0001 C CNN
 $EndComp
 Text GLabel 9450 5200 1    50   Input ~ 0
 VCC
-Text GLabel 9450 5400 3    50   Input ~ 0
-CFGIN
 Text GLabel 7500 4700 0    50   Input ~ 0
 GND
 Wire Wire Line
@@ -1146,7 +1144,7 @@ F 3 "~" H 10200 4650 50  0001 C CNN
 $EndComp
 Text GLabel 10300 4850 3    50   Input ~ 0
 GND
-Text GLabel 10200 4850 3    50   Output ~ 0
+Text GLabel 9900 5550 3    50   Output ~ 0
 CFGIN
 Text GLabel 10100 4850 3    50   Input ~ 0
 CFOUT
@@ -1193,4 +1191,15 @@ Connection ~ 2750 5750
 Wire Wire Line
 	950  5650 950  5750
 Connection ~ 950  5750
+Wire Wire Line
+	9450 5400 9450 5450
+Wire Wire Line
+	9450 5450 9900 5450
+Wire Wire Line
+	9900 5450 10200 5450
+Wire Wire Line
+	10200 5450 10200 4850
+Connection ~ 9900 5450
+Wire Wire Line
+	9900 5450 9900 5550
 $EndSCHEMATC
