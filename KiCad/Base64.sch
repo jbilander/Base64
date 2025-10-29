@@ -180,11 +180,11 @@ Text GLabel 6500 7200 2    50   BiDi ~ 0
 LDS
 Text GLabel 6500 7300 2    50   BiDi ~ 0
 RW
-Text GLabel 4500 4100 0    50   Output ~ 0
+Text GLabel 4500 4100 0    50   Input ~ 0
 FC0
-Text GLabel 4500 4200 0    50   Output ~ 0
+Text GLabel 4500 4200 0    50   Input ~ 0
 FC1
-Text GLabel 4500 4300 0    50   Output ~ 0
+Text GLabel 4500 4300 0    50   Input ~ 0
 FC2
 Text GLabel 2750 6950 0    50   Output ~ 0
 VMA
@@ -192,9 +192,9 @@ Text GLabel 4500 4700 0    50   Input ~ 0
 E
 Text GLabel 4500 4800 0    50   Output ~ 0
 VPA
-Text GLabel 4500 3800 0    50   Input ~ 0
+Text GLabel 4500 3800 0    50   Output ~ 0
 BR
-Text GLabel 4500 3700 0    50   Output ~ 0
+Text GLabel 4500 3700 0    50   Input ~ 0
 BG
 Text GLabel 4500 3600 0    50   Output ~ 0
 BGACK
@@ -235,9 +235,9 @@ Text GLabel 1700 3450 0    50   Input ~ 0
 CLK
 NoConn ~ 2900 3550
 NoConn ~ 2900 3650
-Text GLabel 4100 950  1    50   Input ~ 0
+Text GLabel 4100 950  1    50   BiDi ~ 0
 PL2C
-Text GLabel 4500 950  1    50   Input ~ 0
+Text GLabel 4500 950  1    50   Output ~ 0
 PL5C
 Text GLabel 9100 1950 3    50   Input ~ 0
 PL5B
@@ -245,7 +245,7 @@ Text GLabel 8900 1950 3    50   Input ~ 0
 PL5A
 Text GLabel 9500 1950 3    50   Input ~ 0
 PL2D
-Text GLabel 8700 1950 3    50   Input ~ 0
+Text GLabel 8700 1950 3    50   Output ~ 0
 PL2B
 Text GLabel 8500 1950 3    50   Input ~ 0
 PL2A
@@ -255,8 +255,6 @@ Text GLabel 10600 950  1    50   Input ~ 0
 GND
 Text GLabel 6400 950  1    50   Input ~ 0
 GND
-Wire Wire Line
-	6400 950  6500 950 
 NoConn ~ 6600 950 
 NoConn ~ 6700 950 
 NoConn ~ 6800 950 
@@ -351,77 +349,77 @@ NoConn ~ 4300 1950
 NoConn ~ 4400 1950
 NoConn ~ 4500 1950
 NoConn ~ 4600 1950
-Text GLabel 4900 1950 3    50   Input ~ 0
+Text GLabel 4900 1950 3    50   BiDi ~ 0
 PT29B
 NoConn ~ 5100 1950
 NoConn ~ 5300 1950
 NoConn ~ 5500 1950
-Text GLabel 5000 1950 3    50   Input ~ 0
+Text GLabel 5000 1950 3    50   BiDi ~ 0
 PR47C
-Text GLabel 5200 1950 3    50   Input ~ 0
+Text GLabel 5200 1950 3    50   Output ~ 0
 PR47D
-Text GLabel 5400 1950 3    50   Input ~ 0
+Text GLabel 5400 1950 3    50   BiDi ~ 0
 PR44D
-Text GLabel 5600 1950 3    50   Input ~ 0
+Text GLabel 5600 1950 3    50   BiDi ~ 0
 PR41A
-Text GLabel 5700 1950 3    50   Input ~ 0
+Text GLabel 5700 1950 3    50   BiDi ~ 0
 PT35B
-Text GLabel 5800 1950 3    50   Input ~ 0
+Text GLabel 5800 1950 3    50   BiDi ~ 0
 PR38A
-Text GLabel 5900 1950 3    50   Input ~ 0
+Text GLabel 5900 1950 3    50   BiDi ~ 0
 PT29A
-Text GLabel 6000 1950 3    50   Input ~ 0
+Text GLabel 6000 1950 3    50   Output ~ 0
 PR38B
 NoConn ~ 6100 1950
-Text GLabel 6200 1950 3    50   Input ~ 0
+Text GLabel 6200 1950 3    50   Output ~ 0
 PR44C
 Text GLabel 6300 1950 3    50   Input ~ 0
 GND
 Text GLabel 6400 1950 3    50   Input ~ 0
 GND
-Text GLabel 6500 1950 3    50   Input ~ 0
+Text GLabel 6500 1950 3    50   BiDi ~ 0
 PT27B
-Text GLabel 6600 1950 3    50   Input ~ 0
+Text GLabel 6600 1950 3    50   Output ~ 0
 PR35C
-Text GLabel 6700 1950 3    50   Input ~ 0
+Text GLabel 6700 1950 3    50   BiDi ~ 0
 PT18B
 Text GLabel 6800 1950 3    50   Input ~ 0
 PR32C
-Text GLabel 6900 1950 3    50   Input ~ 0
+Text GLabel 6900 1950 3    50   BiDi ~ 0
 PT22B
 Text GLabel 7000 1950 3    50   Input ~ 0
 PR29C
-Text GLabel 7100 1950 3    50   Input ~ 0
+Text GLabel 7100 1950 3    50   BiDi ~ 0
 PT18A
 Text GLabel 7200 1950 3    50   Input ~ 0
 PR20D
-Text GLabel 7300 1950 3    50   Input ~ 0
+Text GLabel 7300 1950 3    50   Output ~ 0
 PT15B
 Text GLabel 7400 1950 3    50   Input ~ 0
 PR29A
-Text GLabel 7500 1950 3    50   Input ~ 0
+Text GLabel 7500 1950 3    50   BiDi ~ 0
 PT6B
-Text GLabel 7600 1950 3    50   Input ~ 0
+Text GLabel 7600 1950 3    50   BiDi ~ 0
 PR20C
-Text GLabel 7700 1950 3    50   Input ~ 0
+Text GLabel 7700 1950 3    50   BiDi ~ 0
 PT11B
-Text GLabel 7800 1950 3    50   Input ~ 0
+Text GLabel 7800 1950 3    50   BiDi ~ 0
 PR17C
-Text GLabel 7900 1950 3    50   Input ~ 0
+Text GLabel 7900 1950 3    50   BiDi ~ 0
 PT6A
-Text GLabel 8000 1950 3    50   Input ~ 0
+Text GLabel 8000 1950 3    50   BiDi ~ 0
 PR14D
-Text GLabel 8100 1950 3    50   Input ~ 0
+Text GLabel 8100 1950 3    50   BiDi ~ 0
 PT4B
-Text GLabel 8200 1950 3    50   Input ~ 0
+Text GLabel 8200 1950 3    50   BiDi ~ 0
 PR17B
 Text GLabel 8300 1950 3    50   Input ~ 0
 PT4A
 Text GLabel 8400 1950 3    50   Input ~ 0
 PR14C
-Text GLabel 8600 1950 3    50   Input ~ 0
+Text GLabel 8600 1950 3    50   Output ~ 0
 PR11B
-Text GLabel 8800 1950 3    50   Input ~ 0
+Text GLabel 8800 1950 3    50   Output ~ 0
 PR5D
 Text GLabel 9000 1950 3    50   Input ~ 0
 PR8C
@@ -429,41 +427,41 @@ Text GLabel 9200 1950 3    50   Input ~ 0
 PR5C
 Text GLabel 9300 1950 3    50   Input ~ 0
 PL8A
-Text GLabel 9400 1950 3    50   Input ~ 0
+Text GLabel 9400 1950 3    50   Output ~ 0
 PT62B
 Text GLabel 9600 1950 3    50   Input ~ 0
 PT58B
 Text GLabel 9700 1950 3    50   Input ~ 0
 PL11D
-Text GLabel 9800 1950 3    50   Input ~ 0
+Text GLabel 9800 1950 3    50   BiDi ~ 0
 PT62D
 Text GLabel 9900 1950 3    50   Input ~ 0
 PL8B
-Text GLabel 10000 1950 3    50   Input ~ 0
+Text GLabel 10000 1950 3    50   BiDi ~ 0
 PT62A
 Text GLabel 10100 1950 3    50   Input ~ 0
 PL14A
-Text GLabel 10200 1950 3    50   Input ~ 0
+Text GLabel 10200 1950 3    50   BiDi ~ 0
 PT58D
 Text GLabel 10300 1950 3    50   Input ~ 0
 PL11C
-Text GLabel 10400 1950 3    50   Input ~ 0
+Text GLabel 10400 1950 3    50   BiDi ~ 0
 PT58A
 Text GLabel 10500 1950 3    50   Input ~ 0
 PL20A
-Text GLabel 10600 1950 3    50   Input ~ 0
+Text GLabel 10600 1950 3    50   BiDi ~ 0
 PT49B
 Text GLabel 10700 1950 3    50   Input ~ 0
 PL14B
-Text GLabel 10800 1950 3    50   Input ~ 0
+Text GLabel 10800 1950 3    50   BiDi ~ 0
 PT51A
 Text GLabel 10900 1950 3    50   Input ~ 0
 PL20B
-Text GLabel 900  950  1    50   Input ~ 0
+Text GLabel 900  950  1    50   BiDi ~ 0
 PT44B
 Text GLabel 1000 950  1    50   Input ~ 0
 PL23A
-Text GLabel 1100 950  1    50   Input ~ 0
+Text GLabel 1100 950  1    50   BiDi ~ 0
 PT47A
 Text GLabel 1200 950  1    50   Input ~ 0
 GND
@@ -475,15 +473,15 @@ Text GLabel 1500 950  1    50   Input ~ 0
 GND
 Text GLabel 1600 950  1    50   Input ~ 0
 PL23B
-Text GLabel 1700 950  1    50   Input ~ 0
+Text GLabel 1700 950  1    50   BiDi ~ 0
 PT38B
 Text GLabel 1800 950  1    50   Input ~ 0
 PL23C
-Text GLabel 1900 950  1    50   Input ~ 0
+Text GLabel 1900 950  1    50   BiDi ~ 0
 PT40A
 Text GLabel 2000 950  1    50   Input ~ 0
 PL23D
-Text GLabel 2100 950  1    50   Input ~ 0
+Text GLabel 2100 950  1    50   Output ~ 0
 PT35A
 Text GLabel 2200 950  1    50   Input ~ 0
 PL26A
@@ -497,71 +495,71 @@ Text GLabel 2600 950  1    50   Input ~ 0
 PL26C
 Text GLabel 2800 950  1    50   Input ~ 0
 PL26D
-Text GLabel 2900 950  1    50   Input ~ 0
+Text GLabel 2900 950  1    50   BiDi ~ 0
 PT22A
 Text GLabel 3000 950  1    50   Input ~ 0
 PL32A
-Text GLabel 3100 950  1    50   Input ~ 0
+Text GLabel 3100 950  1    50   BiDi ~ 0
 PT20B
 Text GLabel 3200 950  1    50   Input ~ 0
 PL35D
-Text GLabel 3300 950  1    50   Input ~ 0
+Text GLabel 3300 950  1    50   BiDi ~ 0
 PT15A
 Text GLabel 3400 950  1    50   Input ~ 0
 PL35A
-Text GLabel 3500 950  1    50   Input ~ 0
+Text GLabel 3500 950  1    50   BiDi ~ 0
 PT13B
 Text GLabel 3600 950  1    50   Input ~ 0
 PL32B
-Text GLabel 3700 950  1    50   Input ~ 0
+Text GLabel 3700 950  1    50   BiDi ~ 0
 PT11A
 Text GLabel 3800 950  1    50   Input ~ 0
 PL35B
-Text GLabel 3900 950  1    50   Input ~ 0
+Text GLabel 3900 950  1    50   BiDi ~ 0
 PT9B
 Text GLabel 4000 950  1    50   Input ~ 0
 PL38C
 Text GLabel 4200 950  1    50   Input ~ 0
 PL38D
-Text GLabel 4300 950  1    50   Input ~ 0
+Text GLabel 4300 950  1    50   BiDi ~ 0
 PT9A
 Text GLabel 4400 950  1    50   Input ~ 0
 PL41B
 Text GLabel 4600 950  1    50   Input ~ 0
 PL41D
-Text GLabel 4700 950  1    50   Input ~ 0
+Text GLabel 4700 950  1    50   BiDi ~ 0
 PL8C
 Text GLabel 4800 950  1    50   Input ~ 0
 PL41C
-Text GLabel 4900 950  1    50   Input ~ 0
+Text GLabel 4900 950  1    50   BiDi ~ 0
 PL5D
 Text GLabel 5000 950  1    50   Input ~ 0
 PL44B
-Text GLabel 5100 950  1    50   Input ~ 0
+Text GLabel 5100 950  1    50   BiDi ~ 0
 PL11B
 Text GLabel 5200 950  1    50   Input ~ 0
 PL44A
-Text GLabel 5300 950  1    50   Input ~ 0
+Text GLabel 5300 950  1    50   BiDi ~ 0
 PL14C
 Text GLabel 5400 950  1    50   Input ~ 0
 PB4B
-Text GLabel 5500 950  1    50   Input ~ 0
+Text GLabel 5500 950  1    50   BiDi ~ 0
 PL14D
 Text GLabel 5600 950  1    50   Input ~ 0
 PB4A
-Text GLabel 5700 950  1    50   Input ~ 0
+Text GLabel 5700 950  1    50   BiDi ~ 0
 PL17C
 Text GLabel 5800 950  1    50   Input ~ 0
 PB6B
-Text GLabel 5900 950  1    50   Input ~ 0
+Text GLabel 5900 950  1    50   BiDi ~ 0
 PL20C
 Text GLabel 6000 950  1    50   Input ~ 0
 PB6A
-Text GLabel 6100 950  1    50   Input ~ 0
+Text GLabel 6100 950  1    50   BiDi ~ 0
 PL29A
 Text GLabel 6200 950  1    50   Input ~ 0
 PB13A
-Text GLabel 6300 950  1    50   Input ~ 0
+Text GLabel 6300 950  1    50   Output ~ 0
 PL20D
 Text GLabel 950  4850 0    50   BiDi ~ 0
 D0
@@ -587,15 +585,15 @@ Text GLabel 10800 950  1    50   Input ~ 0
 GND
 Text GLabel 10900 950  1    50   Input ~ 0
 GND
-Text GLabel 3750 5050 2    50   Input ~ 0
+Text GLabel 3750 5050 2    50   BiDi ~ 0
 PL2C
 Text GLabel 3750 4850 2    50   Input ~ 0
 PL5C
-Text GLabel 3750 5250 2    50   Input ~ 0
+Text GLabel 3750 5250 2    50   BiDi ~ 0
 PT11A
-Text GLabel 3750 5150 2    50   Input ~ 0
+Text GLabel 3750 5150 2    50   BiDi ~ 0
 PT9B
-Text GLabel 3750 4950 2    50   Input ~ 0
+Text GLabel 3750 4950 2    50   BiDi ~ 0
 PT9A
 Text GLabel 1950 5650 2    50   BiDi ~ 0
 PL8C
@@ -613,7 +611,7 @@ Text GLabel 1950 5050 2    50   BiDi ~ 0
 PL20C
 Text GLabel 1950 4950 2    50   BiDi ~ 0
 PL29A
-Text GLabel 1950 4850 2    50   BiDi ~ 0
+Text GLabel 1950 4850 2    50   Input ~ 0
 PL20D
 Text GLabel 2750 4850 0    50   BiDi ~ 0
 D8
@@ -635,13 +633,13 @@ Text GLabel 2750 5850 0    50   Input ~ 0
 GND
 Text GLabel 1950 6350 2    50   Input ~ 0
 VCC
-Text GLabel 3750 5650 2    50   Input ~ 0
+Text GLabel 3750 5650 2    50   BiDi ~ 0
 PT22A
-Text GLabel 3750 5550 2    50   Input ~ 0
+Text GLabel 3750 5550 2    50   BiDi ~ 0
 PT20B
-Text GLabel 3750 5450 2    50   Input ~ 0
+Text GLabel 3750 5450 2    50   BiDi ~ 0
 PT15A
-Text GLabel 3750 5350 2    50   Input ~ 0
+Text GLabel 3750 5350 2    50   BiDi ~ 0
 PT13B
 Text GLabel 3750 6550 2    50   Output ~ 0
 PT24B
@@ -752,7 +750,7 @@ Text GLabel 1950 6650 2    50   BiDi ~ 0
 PT38B
 Text GLabel 1950 6550 2    50   BiDi ~ 0
 PT40A
-Text GLabel 1950 6450 2    50   BiDi ~ 0
+Text GLabel 1950 6450 2    50   Input ~ 0
 PT35A
 Text GLabel 3750 6750 2    50   Input ~ 0
 PT62B
@@ -790,15 +788,15 @@ Text GLabel 7500 4050 0    50   Input ~ 0
 GND
 Text GLabel 7500 3050 0    50   Input ~ 0
 BERR
-Text GLabel 10200 3150 2    50   Input ~ 0
+Text GLabel 10200 3150 2    50   BiDi ~ 0
 PR47C
 Text GLabel 10200 3050 2    50   Input ~ 0
 PR47D
-Text GLabel 10200 3250 2    50   Input ~ 0
+Text GLabel 10200 3250 2    50   BiDi ~ 0
 PR44D
-Text GLabel 10200 3750 2    50   Input ~ 0
+Text GLabel 10200 3750 2    50   BiDi ~ 0
 PR41A
-Text GLabel 10200 3850 2    50   Input ~ 0
+Text GLabel 10200 3850 2    50   BiDi ~ 0
 PR38A
 Text GLabel 8500 3750 2    50   Input ~ 0
 PR38B
@@ -806,7 +804,7 @@ Text GLabel 8500 3650 2    50   Input ~ 0
 PR44C
 Text GLabel 8500 3550 2    50   Input ~ 0
 PR35C
-Text GLabel 8500 3450 2    50   Input ~ 0
+Text GLabel 8500 3450 2    50   Output ~ 0
 PR32C
 Text GLabel 8500 3350 2    50   Output ~ 0
 PR29C
@@ -835,9 +833,9 @@ Text GLabel 9200 4050 0    50   Input ~ 0
 GND
 Text GLabel 10200 2950 2    50   Input ~ 0
 VCC
-Text GLabel 10200 3950 2    50   Input ~ 0
+Text GLabel 10200 3950 2    50   BiDi ~ 0
 PR20C
-Text GLabel 10200 4050 2    50   Input ~ 0
+Text GLabel 10200 4050 2    50   BiDi ~ 0
 PR17C
 $Comp
 L Base64:SN74CBTD3861DGVR U8
@@ -891,7 +889,7 @@ A17
 Text GLabel 7500 3850 0    50   Input ~ 0
 CFGIN
 Text GLabel 7500 3750 0    50   Output ~ 0
-CFOUT
+CFGOUT
 Wire Wire Line
 	7500 3950 7500 4050
 NoConn ~ 8500 4050
@@ -1103,31 +1101,31 @@ Connection ~ 7500 4800
 NoConn ~ 8500 4800
 NoConn ~ 8500 4900
 NoConn ~ 8500 5000
-Text GLabel 8500 5100 2    50   Input ~ 0
+Text GLabel 8500 5100 2    50   BiDi ~ 0
 PT29B
-Text GLabel 8500 5200 2    50   Input ~ 0
+Text GLabel 8500 5200 2    50   BiDi ~ 0
 PT35B
-Text GLabel 8500 5300 2    50   Input ~ 0
+Text GLabel 8500 5300 2    50   BiDi ~ 0
 PT29A
-Text GLabel 8500 5400 2    50   Input ~ 0
+Text GLabel 8500 5400 2    50   BiDi ~ 0
 PT27B
-Text GLabel 8500 5700 2    50   Input ~ 0
+Text GLabel 8500 5700 2    50   BiDi ~ 0
 PT18B
-Text GLabel 8500 5600 2    50   Input ~ 0
+Text GLabel 8500 5600 2    50   BiDi ~ 0
 PT22B
-Text GLabel 8500 5500 2    50   Input ~ 0
+Text GLabel 8500 5500 2    50   BiDi ~ 0
 PT18A
 Text GLabel 8500 4700 2    50   Input ~ 0
 PT15B
-Text GLabel 10200 3650 2    50   Input ~ 0
+Text GLabel 10200 3650 2    50   BiDi ~ 0
 PT6B
-Text GLabel 10200 3550 2    50   Input ~ 0
+Text GLabel 10200 3550 2    50   BiDi ~ 0
 PT11B
-Text GLabel 10200 3450 2    50   Input ~ 0
+Text GLabel 10200 3450 2    50   BiDi ~ 0
 PT6A
-Text GLabel 10200 3350 2    50   Input ~ 0
+Text GLabel 10200 3350 2    50   BiDi ~ 0
 PT4B
-Text GLabel 8500 3950 2    50   Input ~ 0
+Text GLabel 8500 3950 2    50   Output ~ 0
 PL2A
 Text GLabel 8500 3850 2    50   Input ~ 0
 PL2B
@@ -1147,7 +1145,7 @@ GND
 Text GLabel 9900 5550 3    50   Output ~ 0
 CFGIN
 Text GLabel 10100 4850 3    50   Input ~ 0
-CFOUT
+CFGOUT
 $Comp
 L Base64:501MLFT U1
 U 1 1 6902D0C2
@@ -1202,4 +1200,6 @@ Wire Wire Line
 Connection ~ 9900 5450
 Wire Wire Line
 	9900 5450 9900 5550
+Text GLabel 6500 950  1    50   Input ~ 0
+GND
 $EndSCHEMATC
