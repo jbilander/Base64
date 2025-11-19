@@ -219,7 +219,7 @@ L Base64:1473149-1 J1
 U 1 1 68EE186B
 P 900 1950
 F 0 "J1" V 1400 -2450 50  0000 L CNN
-F 1 "1473149-1" V 1400 -3000 50  0000 L CNN
+F 1 "1473149-4" V 1400 -3000 50  0000 L CNN
 F 2 "Base64:TE_DDR2-SODIMM-200_1473149-x" H 1750 2050 50  0001 L CNN
 F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1473149&DocType=Customer+Drawing&DocLang=English" H 1750 1950 50  0001 L CNN
 	1    900  1950

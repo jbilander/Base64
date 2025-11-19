@@ -1213,7 +1213,7 @@
     (fp_text reference J1 (at -3.6 0 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 1473149-1 (at -5.6 0 90) (layer F.Fab) hide
+    (fp_text value 1473149-4 (at -5.6 0 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start 10.2 -29.8) (end 4.6 -29.8) (layer F.CrtYd) (width 0.05))
@@ -3260,7 +3260,7 @@
     )
   )
 
-  (gr_text 1473149-1 (at 97.225 79.3 90) (layer F.SilkS) (tstamp 690A56E1)
+  (gr_text 1473149-4 (at 97.225 79.3 90) (layer F.SilkS) (tstamp 690A56E1)
     (effects (font (size 1.2 1.2) (thickness 0.2)))
   )
   (gr_text JLCJLCJLCJLC (at 110.55 94.225 270) (layer B.SilkS) (tstamp 690126CE)
