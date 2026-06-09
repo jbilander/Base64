@@ -6,19 +6,11 @@ Work in progress, hardware not yet verified!
 ***
 
 <a href="images/Screenshot_Base64_pic1.png">
-<img src="images/Screenshot_Base64_pic1.png" width="600" height="283">
+<img src="images/Screenshot_Base64_pic1.png" width="600" height="278">
 </a>
 <br />
 <a href="images/Screenshot_Base64_pic2.png">
-<img src="images/Screenshot_Base64_pic2.png" width="600" height="283">
-</a>
-<br />
-<a href="images/Screenshot_Base64_pic3.png">
-<img src="images/Screenshot_Base64_pic3.png" width="600" height="211">
-</a>
-<br />
-<a href="images/Screenshot_Base64_pic4.png">
-<img src="images/Screenshot_Base64_pic4.png" width="600" height="211">
+<img src="images/Screenshot_Base64_pic2.png" width="600" height="333">
 </a>
 
 ***
