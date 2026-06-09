@@ -30,7 +30,7 @@ Work in progress, hardware not yet verified!
 - DIP-64 footprint, pin-compatible with the MC68000 socket in an Amiga 500 (or similar 68k host)
 - 7× SN74CBTD3861 FET bus switches for bidirectional 5 V ↔ 3.3 V level translation on all bus signals
 - Clock subsystem: 7 MHz host clock → 84 MHz phase-aligned output to the FPGA, locked to the host's 7 MHz with ~300 ps skew
-- Autoconfig daisy-chain header (J2) for use alongside expansion-edge devices like the A590
+- Autoconfig daisy-chain header (J2) for future Amiga-specific firmware use
 - 3.3 V rail generated locally from the 5 V CPU socket supply via TLV75533 LDO
 
 ## Clock architecture
@@ -66,21 +66,25 @@ Available from the official [Muse Lab AliExpress store](https://www.aliexpress.c
 | C11 | 1 | 10 nF | 570B VDD decoupling (per datasheet), X7R, 50 V | 0603 | [187-CL10B103KA8WPNC](https://www.mouser.com/ProductDetail/187-CL10B103KA8WPNC) |
 | R1–R2 | 2 | 33 Ω | Series termination, 1% | 0805 | [652-CR0805FX-33R0ELF](https://www.mouser.com/ProductDetail/652-CR0805FX-33R0ELF) |
 | R3–R4 | 2 | 33 Ω | Series termination, 1% | 0603 | [652-CR0603FX-33R0ELF](https://www.mouser.com/ProductDetail/652-CR0603FX-33R0ELF) |
-| R5 | 1 | 10 kΩ | Autoconfig daisy-chain pull-up, 1% | 0603 | [652-CR0603FX-1002ELF](https://www.mouser.com/ProductDetail/652-CR0603FX-1002ELF) |
+| R5 | 1 | 10 kΩ | Autoconfig /CFGIN pull-up, 1% | 0603 | [652-CR0603FX-1002ELF](https://www.mouser.com/ProductDetail/652-CR0603FX-1002ELF) |
 | J1 | 1 | TE 1473149-4 | 200-pin SO-DIMM (DDR2) socket for FPGA module | THT | [571-1473149-4](https://www.mouser.com/ProductDetail/571-1473149-4) |
-| J2 | 1 | 3-pin right-angle header | Autoconfig daisy-chain (/CFGIN, /CFGOUT, GND), 0.64 mm square, 2.54 mm pitch | THT | [AliExpress](https://www.aliexpress.com/item/32963604292.html) |
-| U11 | 64 | Single round male pin, 2.54 mm | DIP-64 CPU socket pins, ~11.96 mm overall length | THT | [AliExpress](https://www.aliexpress.com/item/32887861343.html) |
+| J2 | 1 | 3-pin right-angle header | Autoconfig header (/CFGOUT, /CFGIN, GND), 0.64 mm square, 2.54 mm pitch | THT | [AliExpress](https://www.aliexpress.com/item/32963604292.html) |
+| U11 | 2 | 40-pin breakaway male pin strip, 2.54 mm pitch | Round pins, ~11.96 mm overall pin length, used as DIP-64 CPU socket pins | THT | [AliExpress](https://www.aliexpress.com/item/32887861343.html) |
 
 ### Assembly notes
 
-**U11 (CPU socket pins):** these are individual round male pins on 2.54 mm pitch, ~11.96 mm in overall height (top of pin to bottom of pin). Sourced as 32-pin sections from breakaway 40-pin strips. Push them through the carrier board pads from the top, solder on the top side, then plug the protruding bottom side into the host system's MC68000 socket.
+**U11 (CPU socket pins):** these are round male pins supplied as 40-pin breakaway pin strips on 2.54 mm pitch, with ~11.96 mm overall pin length (top of pin to bottom). Break each strip down to a 32-pin section (you need two such sections, so two strips minimum). Push each 32-pin section through the carrier board pads from the top, solder on the top side, then plug the protruding bottom side into the host system's MC68000 socket.
 
-**J2 (autoconfig daisy-chain):**
-- Pin 1: /CFGIN
-- Pin 2: /CFGOUT
+**J2 (autoconfig header):**
+- Pin 1: /CFGOUT
+- Pin 2: /CFGIN (with 10 kΩ pull-up via R5)
 - Pin 3: GND
 
-If the host has no other autoconfig device on the side expansion (e.g. no A590), place a jumper shunt between pin 1 (/CFGIN) and pin 3 (GND) so the FPGA autoconfigs immediately. If there *is* a side expansion device, connect that device's /CFGOUT signal to J2 pin 1 (/CFGIN) so devices daisy-chain in the expected order (side expansion configures first, then Base64).
+This header supports Amiga-style autoconfig daisy-chaining and is intended for future firmware that implements 68k soft-core, fast RAM, and/or SD card via Amiga autoconfig. The functionality is **not yet implemented** in the current FPGA designs — the header is provided so the hardware is forward-compatible.
+
+When used (with future Amiga firmware): if no other autoconfig device sits on the side expansion (e.g. no A590), place a jumper shunt between pin 2 (/CFGIN) and pin 3 (GND) so the FPGA autoconfigs immediately. If a side expansion autoconfig device *is* present, connect that device's /CFGOUT signal to J2 pin 2 (/CFGIN) so devices daisy-chain in the expected order (side expansion configures first, then Base64).
+
+For use in non-Amiga 68k systems, J2 is not applicable in its standard form, though it could potentially be repurposed depending on the target system.
 
 J2 uses a standard 0.64 mm square 2.54 mm pitch right-angle pin header. Available from AliExpress directly as a 3-pin part, or cut from a 40-pin breakaway strip.
 
