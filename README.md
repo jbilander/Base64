@@ -1,8 +1,6 @@
 # Base64
 A 68k carrier board in DIP-64 that takes the [iCESugar-Pro-v1.3](https://github.com/wuxx/icesugar-pro) FPGA module
 
-Work in progress, hardware not yet verified!
-
 ***
 
 <a href="images/Screenshot_Base64_pic1.png">
