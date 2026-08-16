@@ -57,7 +57,7 @@ Available from the official [Muse Lab AliExpress store](https://www.aliexpress.c
 | R1–R2 | 2 | 33 Ω | Series termination, 1% | 0805 | [652-CR0805FX-33R0ELF](https://www.mouser.com/ProductDetail/652-CR0805FX-33R0ELF) |
 | R3–R4 | 2 | 33 Ω | Series termination, 1% | 0603 | [652-CR0603FX-33R0ELF](https://www.mouser.com/ProductDetail/652-CR0603FX-33R0ELF) |
 | R5 | 1 | 10 kΩ | Autoconfig /CFGIN pull-up, 1% | 0603 | [652-CR0603FX-1002ELF](https://www.mouser.com/ProductDetail/652-CR0603FX-1002ELF) |
-| J1 | 1 | TE 1473149-4 | 200-pin SO-DIMM (DDR2) socket for FPGA module | THT | [571-1473149-4](https://www.mouser.com/ProductDetail/571-1473149-4) |
+| J1 | 1 | TE 1473149-4 | 200-pin SO-DIMM (DDR2) socket for FPGA module | SMT | [571-1473149-4](https://www.mouser.com/ProductDetail/571-1473149-4) |
 | J2 | 1 | 3-pin right-angle header | Autoconfig header (/CFGOUT, /CFGIN, GND), 0.64 mm square, 2.54 mm pitch | THT | [AliExpress](https://www.aliexpress.com/item/32963604292.html) |
 | U11 | 2 | 40-pin breakaway male pin strip, 2.54 mm pitch | Round pins, ~11.96 mm overall pin length, used as DIP-64 CPU socket pins | THT | [AliExpress](https://www.aliexpress.com/item/32887861343.html) |
 
@@ -79,8 +79,6 @@ For use in non-Amiga 68k systems, J2 is not applicable in its standard form, tho
 J2 uses a standard 0.64 mm square 2.54 mm pitch right-angle pin header. Available from AliExpress directly as a 3-pin part, or cut from a 40-pin breakaway strip.
 
 ## Status
-
-Work in progress, hardware not yet verified.
 
 Rev C changes vs Rev B:
 - ICS501MLFT clock multiplier replaced with ICS570BLFT (adds feedback pin for phase-aligned operation)
