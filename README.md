@@ -237,7 +237,7 @@ Last come the two 32-pin strips (**U11**) and the 3-pin CFG header (**J2**). Fit
 required for the board to autoconfig, and you will need a jumper shunt for it unless you are
 daisy-chaining from another device. See [notes on selected parts](#notes-on-selected-parts).
 
-Push each 32-pin section through the carrier board pads **from the top** and solder on the
+Push each 32-pin section through the carrier board pads **from the underside** and solder on the
 top side. The protruding bottom side is what plugs into the host system's MC68000 socket.
 
 The 32-pin sections are broken out of cheap 40-pin breakaway strips, and the break leaves a
