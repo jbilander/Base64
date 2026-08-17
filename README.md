@@ -31,7 +31,7 @@ A 68k carrier board in DIP-64 that takes the [iCESugar-Pro-v1.3](https://github.
 - DIP-64 footprint, pin-compatible with the MC68000 socket in an Amiga 500 (or similar 68k host)
 - 7× SN74CBTD3861 FET bus switches for bidirectional 5 V ↔ 3.3 V level translation on all bus signals
 - Clock subsystem: 7 MHz host clock → 84 MHz phase-aligned output to the FPGA, locked to the host's 7 MHz with ~300 ps skew
-- Autoconfig daisy-chain header (J2) for future Amiga-specific firmware use
+- Autoconfig daisy-chain header (J2) — Amiga autoconfig is implemented and working; J2 must be jumpered or daisy-chained for the board to configure
 - 3.3 V rail generated locally from the 5 V CPU socket supply via TLV75533 LDO
 
 ## Clock architecture
@@ -81,9 +81,12 @@ Available from the official [Muse Lab AliExpress store](https://www.aliexpress.c
 - Pin 2: /CFGIN (with 10 kΩ pull-up via R5)
 - Pin 3: GND
 
-This header supports Amiga-style autoconfig daisy-chaining and is intended for future firmware that implements 68k soft-core, fast RAM, and/or SD card via Amiga autoconfig. The functionality is **not yet implemented** in the current FPGA designs — the header is provided so the hardware is forward-compatible.
+This header supports Amiga-style autoconfig daisy-chaining, and **autoconfig is implemented and working** in the current FPGA designs. J2 is therefore not optional — it has to be wired one of these two ways:
 
-When used (with future Amiga firmware): if no other autoconfig device sits on the side expansion (e.g. no A590), place a jumper shunt between pin 2 (/CFGIN) and pin 3 (GND) so the FPGA autoconfigs immediately. If a side expansion autoconfig device *is* present, connect that device's /CFGOUT signal to J2 pin 2 (/CFGIN) so devices daisy-chain in the expected order (side expansion configures first, then Base64).
+- **No other autoconfig device on the side expansion** (e.g. no A590): place a standard 2.54 mm jumper shunt across pin 2 (/CFGIN) and pin 3 (GND) so the Base64 autoconfigs immediately.
+- **A side expansion autoconfig device is present**: connect that device's /CFGOUT to J2 pin 2 (/CFGIN) instead, so the devices daisy-chain in the expected order — side expansion configures first, then Base64.
+
+If neither connection is made, R5 holds /CFGIN high, the board waits for its turn in the chain that never comes, and it will not appear to the system.
 
 For use in non-Amiga 68k systems, J2 is not applicable in its standard form, though it could potentially be repurposed depending on the target system.
 
@@ -230,7 +233,9 @@ erasing the text the way 100 % IPA does.
 
 ### 8. Through-hole parts
 
-Last come the two 32-pin strips (**U11**) and the 3-pin CFG header (**J2**).
+Last come the two 32-pin strips (**U11**) and the 3-pin CFG header (**J2**). Fit J2 — it is
+required for the board to autoconfig, and you will need a jumper shunt for it unless you are
+daisy-chaining from another device. See [notes on selected parts](#notes-on-selected-parts).
 
 Push each 32-pin section through the carrier board pads **from the top** and solder on the
 top side. The protruding bottom side is what plugs into the host system's MC68000 socket.
@@ -279,6 +284,9 @@ oscillator.
 ***
 
 ## Status
+
+Amiga autoconfig is implemented and working in the current FPGA designs — see the
+[J2 notes](#notes-on-selected-parts) for the jumpering it requires.
 
 Rev C changes vs Rev B:
 - ICS501MLFT clock multiplier replaced with ICS570BLFT (adds feedback pin for phase-aligned operation)
